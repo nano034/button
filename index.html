@@ -339,23 +339,14 @@
     transition: background .15s ease, transform .12s ease, opacity .15s ease;
     user-select: none;
     opacity: .86;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
   }
-
-  .fake-stop::before,
-  .fake-stop::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 23px;
-    height: 1.5px;
-    border-radius: 999px;
-    background: currentColor;
-    transform-origin: center;
-  }
-
-  .fake-stop::before { transform: translate(-50%, -50%) rotate(45deg); }
-  .fake-stop::after  { transform: translate(-50%, -50%) rotate(-45deg); }
 
   .fake-stop:hover {
     background: rgba(0,0,0,.62);
